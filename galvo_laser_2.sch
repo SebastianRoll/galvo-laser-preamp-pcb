@@ -599,4 +599,20 @@ Wire Wire Line
 Wire Wire Line
 	4700 4300 4500 4300
 Connection ~ 4500 4300
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 5CA3AED7
+P 3700 2950
+F 0 "J7" H 3594 2725 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 3594 2816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3700 2950 50  0001 C CNN
+F 3 "~" H 3700 2950 50  0001 C CNN
+	1    3700 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 2950 3950 2950
+Wire Wire Line
+	3950 2950 3950 2700
+Connection ~ 3950 2700
 $EndSCHEMATC
