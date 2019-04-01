@@ -487,7 +487,7 @@ Connection ~ 4000 2000
 Wire Wire Line
 	4000 2000 6050 2000
 $Comp
-L Device:C C3
+L Device:CP C3
 U 1 1 5C63A231
 P 4150 3800
 F 0 "C3" H 4265 3846 50  0000 L CNN
@@ -510,7 +510,7 @@ Wire Wire Line
 	4150 4200 4150 3950
 Connection ~ 4500 4200
 $Comp
-L Device:CP C2
+L Device:C C2
 U 1 1 5C63FB9A
 P 2950 3800
 F 0 "C2" H 3068 3846 50  0000 L CNN
@@ -521,7 +521,7 @@ F 3 "~" H 2950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L Device:C C1
 U 1 1 5C63FC20
 P 2550 3800
 F 0 "C1" H 2668 3846 50  0000 L CNN
@@ -555,21 +555,8 @@ Wire Wire Line
 Connection ~ 2950 4200
 Wire Wire Line
 	2950 4200 2550 4200
-$Comp
-L Connector:Screw_Terminal_01x01 J6
-U 1 1 5C64BD3F
-P 4900 3350
-F 0 "J6" H 4980 3392 50  0000 L CNN
-F 1 "Screw_Terminal_01x01" H 4980 3301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4900 3350 50  0001 C CNN
-F 3 "~" H 4900 3350 50  0001 C CNN
-	1    4900 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 3400 3400 3500
-Wire Wire Line
-	4700 3350 4500 3350
 $Comp
 L Connector:AudioJack4 J5
 U 1 1 5C8D5147
@@ -590,4 +577,26 @@ Wire Wire Line
 Wire Wire Line
 	3400 2400 3900 2400
 Connection ~ 3900 2400
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5CA28408
+P 4900 3100
+F 0 "J6" H 4980 3092 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4980 3001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4900 3100 50  0001 C CNN
+F 3 "~" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3100 4600 3100
+Wire Wire Line
+	4600 3100 4600 3350
+Wire Wire Line
+	4600 3350 4500 3350
+Wire Wire Line
+	4700 3200 4700 4300
+Wire Wire Line
+	4700 4300 4500 4300
+Connection ~ 4500 4300
 $EndSCHEMATC
